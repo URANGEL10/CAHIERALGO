@@ -1,14 +1,65 @@
-Algorithme signe
- variable 
-  a, b : entier 
+Algorithme somme_moyenne 
 
-Ecrire ("entrer les deux nombre de votre choix ")
-lire (a)
-lire (b)
+fonction somme(note: réel) : réel 
 
-Si (a ET b  < 0) OU (a ET b  > 0 ) alors 
-ecrire ("a et b ont la meme signe ")
+Variable 
+ tableau note (nbr) : réel
+ R, i : entier 
 
-Finsi 
+Début 
 
-FIN  
+ R←0
+ i ← 0
+
+Pour i ← 0 à nbr 
+
+ecrire ("entrer tout les note " , i+1 , " de chaque matière ")
+lire (note(i))
+
+FinPour 
+
+ note (nbr) ← note(nbr)+1
+ note(nbr)+1 ← R
+ retourne R
+
+Fin 
+
+fonction moyenne(coeff: réel) : réel 
+
+Variable 
+ coeff: entier 
+ moyenne : réel
+
+Début 
+
+ecrire ("entrer la totale des coefficient  ")
+lire (coeff)
+ 
+moyenne ← R / coeff
+ retourne moyenne
+Fin
+
+fonction mention(mention: chaine) : chaine 
+
+Variable 
+mention: chaine 
+ moyenne : réel
+
+Debut
+Selon moyenne faire
+moyenne=10 :ecrire ("mention passable")
+10>moyenne>12 :ecrire ("mention assez bien")
+12>moyenne>14 :ecrire ("mention bien")
+moyenne>14 :ecrire ("mention TRES bien")
+SINON ecrire ("vous n etes pas admiss")
+Finselon
+
+retourne mention
+Fin
+
+Début 
+
+ Ecrire ("la somme de leur note est", R, " et leur moyenne est " , moyenne, "avec la mntion",mention)
+
+Fin 
+
