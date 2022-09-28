@@ -1,0 +1,14 @@
+Algorithme signe
+ variable 
+  a, b : entier 
+
+Ecrire ("entrer les deux nombre de votre choix ")
+lire (a)
+lire (b)
+
+Si (a ET b  < 0) OU (a ET b  > 0 ) alors 
+ecrire ("a et b ont la meme signe ")
+
+Finsi 
+
+FIN  

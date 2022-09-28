@@ -1,0 +1,27 @@
+Algorithme second_degre 
+
+fonction delta(delta:réel):réel
+variables 
+ delta, s1, s2, a,b,c : réel
+
+Début
+
+ecrire ("entrer le a puis b puis c")
+lire (a)
+lire (b)
+lire (c)
+
+delta← (b*b)*4*a*c
+
+retourne delta(delta:réel)
+
+s1←   (delta(delta:réel) + 2*a*b) / 2
+s2←   (delta(delta:réel) - 2*a*b) / 2
+
+Fin
+
+Début 
+
+ecrire ("les solutions de",a,"x exposant 2", b,"x",c,"est", s1, " ET" , s2)
+
+FIN
